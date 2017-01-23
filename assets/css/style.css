@@ -120,7 +120,7 @@ footer {
   width: 100%;
   max-width: 270px;
   float: right;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   background: #fff;
   border: 1px solid #ddd;
 }
@@ -197,11 +197,11 @@ h3,
 }
 
 .auth-image {
-  box-shadow: 10px 10px 8px #dddddd;
+  box-shadow: 8px 8px 8px #dddddd;
   float: left;
-  height: 257px;
-  margin: 15px 35px 10px 0;
-  width: 250px;
+  height: auto;
+  margin: 10px 35px 8px 0;
+  width: 200px;
 }
 
 blockquote {
@@ -295,4 +295,108 @@ nav a:hover {
 .social:hover {
   cursor: pointer;
   opacity: .8;
+}
+
+@media screen and (max-width: 980px) and (min-width: 769px) {
+  
+  .container {max-width: 725px;}
+
+  .main-section {max-width: 415px;} 
+
+  .auth-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+   blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+  
+  .container {
+    padding: 0 20px;
+  }
+
+  .main-section, .sidebar {
+    max-width: 100%;
+    float: none;
+  } 
+
+  .auth-image {
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  
+  body {
+    font-size: 14px;
+    line-height: 28px;}
+
+  h1 {
+      padding-bottom: 15px;
+      font-size: 24px;
+      line-height: 40px;
+  }
+
+  blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  #masthead {
+    position: static;
+    margin: 0;
+  }
+
+  #logo {
+    width: 100%;
+    height: auto;
+    line-height: 90px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  nav {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-table;
+    width: 32%;
+    margin: 15px 0;
+    padding: 0; 
+    text-align: center;
+  }
+
+  #main-container {
+    padding: 15px;
+  }
+
+  .auth-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+ .main-section, .sidebar {
+  max-width: 100%;
+  float: none;
+} 
+
 }
