@@ -315,6 +315,9 @@ nav a:hover {
     padding-right: 0;
   }
 
+  .work {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 641px) {
@@ -326,12 +329,31 @@ nav a:hover {
   .main-section, .sidebar {
     max-width: 100%;
     float: none;
+    overflow: auto;
   } 
 
   .auth-image {
     width: 50%;
   }
 
+  .work {
+    width: 47%;
+    overflow: hidden;
+    margin: 15px 0px 8px;
+  }
+
+  .work:nth-child(even) {
+    margin-right: 0px;
+  }
+
+  .work:nth-child(odd) {
+    float: right;
+  }
+
+  .work h3 {
+    margin-right: 20px;
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -394,9 +416,14 @@ nav a:hover {
     margin-bottom: 20px;
   }
 
- .main-section, .sidebar {
-  max-width: 100%;
-  float: none;
-} 
+  .main-section, .sidebar {
+    max-width: 100%;
+    float: none;
+    overflow: auto;
+  } 
 
+  .work {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
